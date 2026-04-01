@@ -44,6 +44,8 @@ export interface FieldConfig {
   validateState?: boolean;
   /** Condition under which this field becomes visible */
   visibleWhen?: VisibilityCondition;
+  /** Nested fields (e.g. contact-group children; UI may still be specialized per type) */
+  fields?: FieldConfig[];
 }
 
 export type RuleOperator =
